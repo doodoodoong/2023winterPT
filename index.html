@@ -1,40 +1,151 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-		<title>reveal.js</title>
+    <title>2023. 전남초등사회과 겨울학회</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
+    <style>
+      .fragment.blur {
+        filter: blur(5px);
+      }
+      .fragment.blur.visible {
+        filter: none;
+      }
+    </style>
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section id="slide-1">
+          <h1 class="r-fit-text fragment custom blur">
+            깊이 있는 탐구 중심의 <br />
+            개념기반 교육과정 연구
+          </h1>
+          <div style="height: 100px"></div>
+          <h4 style="text-align: right" class="fragment custom blur">
+            전남사회과연구회 동부권 연구진<br />
+            여수서초 교사 김성식
+          </h4>
+        </section>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+        <section data-auto-animate id="3-2">
+          <section data-auto-animate>
+            <div class="r-hstack justify-content">
+              <div
+                data-id="box1"
+                style="
+                  background: #999;
+                  width: 50px;
+                  height: 50px;
+                  margin: 10px;
+                  border-radius: 5px;
+                "
+              ></div>
+              <div
+                data-id="box2"
+                style="
+                  background: #999;
+                  width: 50px;
+                  height: 50px;
+                  margin: 10px;
+                  border-radius: 5px;
+                "
+              ></div>
+              <div
+                data-id="box3"
+                style="
+                  background: #999;
+                  width: 50px;
+                  height: 50px;
+                  margin: 10px;
+                  border-radius: 5px;
+                "
+              ></div>
+            </div>
+            <div style="height: 3rem"></div>
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+              "
+            >
+              <div>
+                <h1 class="r-fit-text" data-id="3grade">3학년 2학기</h1>
+              </div>
+              <div>
+                <h3>무무초등학교</h3>
+                <h3>3학년 27명</h3>
+              </div>
+              <div></div>
+            </div>
+          </section>
+          <section
+            data-auto-animate
+            data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)"
+          >
+            <h1 style="margin-top: 20px" data-id="3drade">3학년 2학기</h1>
+            <div class="r-hstack justify-center">
+              <div
+                data-id="box1"
+                data-auto-animate-delay="0"
+                style="
+                  background: cyan;
+                  width: 150px;
+                  height: 100px;
+                  margin: 10px;
+                "
+              ></div>
+              <div
+                data-id="box2"
+                data-auto-animate-delay="0.1"
+                style="
+                  background: magenta;
+                  width: 150px;
+                  height: 100px;
+                  margin: 10px;
+                "
+              ></div>
+              <div
+                data-id="box3"
+                data-auto-animate-delay="0.2"
+                style="
+                  background: yellow;
+                  width: 150px;
+                  height: 100px;
+                  margin: 10px;
+                "
+              ></div>
+            </div>
+          </section>
+        </section>
+      </div>
+    </div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
 </html>
